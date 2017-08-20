@@ -1,0 +1,20 @@
+$def with (title, song, content, songsLoaded)
+<html>
+<head>
+<title>$title</title>
+</head>
+<body>
+<p>Now playing: <b>$song</b>.</p>
+<p>$content</p>
+<p>$songsLoaded</p>
+<form action="api/0.1/" method="post">
+  <button name="ctrl" value="play">Play</button>
+</form>
+<form action="api/0.1/" method="post">
+  <button name="ctrl" value="pause">Pause</button>
+</form>
+<form action="api/0.1/" method="post">
+  <button name="ctrl" value="stop">Clear</button>
+</form>
+</body>
+</html>
